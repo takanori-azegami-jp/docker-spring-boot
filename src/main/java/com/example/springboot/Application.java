@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
 
-    @GetMapping("/data")
-    public Map<String, String> getData() {
-        Map<String, String> map = Map.of("message", "Hello World!");
-        return map;
-    }
+	@GetMapping("/data")
+	public Map<String, String> getData() {
+		Map<String, String> map = Map.of("message", "Hello World!");
+		return map;
+	}
 }
